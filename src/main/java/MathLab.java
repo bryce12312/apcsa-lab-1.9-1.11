@@ -120,7 +120,7 @@ public class MathLab
     public static void printLabel(String name, int count)
     {
         // TODO Part 3: print the name, a colon, a space, and the count
-        System.out.println(name+ ":" +count);
+        System.out.println(name+":"+count);
     }
 
     // ---------------------------------------------------------------
