@@ -46,7 +46,8 @@ public class MathLab
     {
         // TODO Part 1: return the number of minutes in the given hours
         // and minutes
-        return 0;
+        
+        return hours * 60 + minutes;
     }
 
     // ---------------------------------------------------------------
@@ -86,7 +87,8 @@ public class MathLab
     public static int totalSeconds(int hours, int minutes)
     {
         // TODO Part 2: call totalMinutes, then multiply its result by 60
-        return 0;
+
+        return totalMinutes(hours,minutes)* 60;
     }
 
     // ---------------------------------------------------------------
@@ -118,6 +120,7 @@ public class MathLab
     public static void printLabel(String name, int count)
     {
         // TODO Part 3: print the name, a colon, a space, and the count
+        System.out.println(name+ ":" +count);
     }
 
     // ---------------------------------------------------------------
@@ -150,7 +153,8 @@ public class MathLab
     public static int distanceFromZero(int n)
     {
         // TODO Part 4a: return the absolute value of n with Math.abs
-        return 0;
+
+        return Math.abs(n);
     }
 
     // ---------------------------------------------------------------
@@ -171,7 +175,7 @@ public class MathLab
     public static double distanceFromZero(double n)
     {
         // TODO Part 4b: return the absolute value of n with Math.abs
-        return 0.0;
+        return Math.abs(n);
     }
 
     // ---------------------------------------------------------------
@@ -200,7 +204,8 @@ public class MathLab
     public static double hypotenuse(double a, double b)
     {
         // TODO Part 5: return the square root of a * a + b * b
-        return 0.0;
+    
+        return Math.sqrt(a*a+b*b);
     }
 
     // ---------------------------------------------------------------
@@ -229,7 +234,7 @@ public class MathLab
     public static int powerOf(int base, int exponent)
     {
         // TODO Part 6: return Math.pow(base, exponent), cast to an int
-        return 0;
+        return (int) Math.pow(base, exponent);
     }
 
     // ---------------------------------------------------------------
@@ -267,7 +272,8 @@ public class MathLab
     public static int rollInRange(int min, int max)
     {
         // TODO Part 7: return a random int from min to max, both included
-        return 0;
+        int count = max - min + 1;
+        return (int) (Math.random()*count) + min;
     }
 
     // ---------------------------------------------------------------
